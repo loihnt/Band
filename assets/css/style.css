@@ -124,7 +124,7 @@ html {
 #slider {
     position: relative;
     margin-top: 46px;
-    padding-top: 50%;
+    padding-top: 50%; /* padding theo tỉ lệ ảnh (50% chiều rộng <=> tỉ lệ 2:1) */
     background: url('/First_Web/W3_band/assets/img/chicago.jpg')
     top center / cover no-repeat;
 }
@@ -219,7 +219,7 @@ html {
 }
 
 .tickets-list li {
-    padding: 8px 16px;
+    padding: 14px 16px;
     border-bottom: 1px solid #ddd;
     font-size: 15px;
 }
@@ -243,6 +243,60 @@ html {
     text-align: center;
     line-height: 24px;
     margin-top: -2px;
+}
+
+/* Places section */
+
+.place-list {
+    margin: 32px -8px 48px;
+}
+
+.place-list .place-item {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 8px;
+}
+
+.place-list .place-img {
+    display: block;
+    width: 100%;
+}
+
+.place-list .place-img:hover {
+    opacity: 0.6;
+}
+
+.place-list .place-body {
+    background-color: #fff;
+    padding: 16px;
+}
+
+.place-list .place-heading {
+
+}
+
+.place-list .place-time {
+    margin-top: 16px;
+    opacity: 0.6;
+}
+
+.place-list .place-description {
+    margin-top: 16px;
+
+}
+
+.place-list .place-buy-ticket {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 12px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.place-list .place-buy-ticket:hover {
+    color: #000;
+    background-color: #ccc;
 }
 
 /* Footer section */
