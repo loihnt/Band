@@ -6,6 +6,7 @@
 }
 
 html {
+    scroll-behavior: smooth scroll;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,6 +25,26 @@ html {
 
 .clear {
     clear: both;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 12px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.pull-right {
+    float: right;
 }
 
 .mt-8 {
@@ -199,7 +220,7 @@ html {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
 }
 
 #content .section-heading {
@@ -284,7 +305,7 @@ html {
 /* Places section */
 
 .place-list {
-    margin: 32px -8px 48px;
+    margin: 32px -8px;
 }
 
 .place-list .place-item {
@@ -320,22 +341,6 @@ html {
     margin-top: 16px;
 
 }
-
-.place-list .place-buy-ticket {
-    text-decoration: none;
-    color: #fff;
-    background-color: #000;
-    padding: 10px 12px;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.place-list .place-buy-ticket:hover {
-    color: #000;
-    background-color: #ccc;
-}
-
-
 
 .modal {
     position: fixed;
@@ -476,7 +481,41 @@ html {
     margin-right: 6px;
 }
 
+/* Map section */
+.map-section img {
+    width: 100%;
+}
+
 /* Footer section */
 #footer {
+    padding: 64px 16px;
+    text-align: center;
+}
 
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .copyright a,
+#footer .socials-list a {
+    color: #757575;
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    opacity: 0.6;
+}
+
+#footer .copyright {
+    margin-top: 16px;
+    color: #757575;
+}
+
+form {
+    margin-right: -4px;
+}
+
+input.btn.pull-right.mt-16 {
+    margin-right: 4px;
 }
